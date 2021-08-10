@@ -1,6 +1,6 @@
-package com.spark.common.tools.model;
+package com.spark.admin.model;
 
-import com.spark.common.tools.enums.ResultEnum;
+import com.spark.admin.enums.ResultEnum;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;

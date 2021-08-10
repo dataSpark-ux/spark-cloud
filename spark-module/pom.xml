@@ -14,8 +14,6 @@
     <modules>
         <module>spark-auth</module>
         <module>spark-sys</module>
-        <module>spark-auth/spark-auth-client</module>
-        <module>spark-auth/spark-auth-server</module>
     </modules>
 
 

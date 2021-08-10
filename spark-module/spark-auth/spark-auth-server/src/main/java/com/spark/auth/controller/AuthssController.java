@@ -1,6 +1,6 @@
 package com.spark.auth.controller;
 
-import com.spark.common.tools.model.Result;
+import com.spark.admin.model.Result;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.GetMapping;

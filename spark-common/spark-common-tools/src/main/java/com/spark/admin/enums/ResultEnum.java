@@ -1,4 +1,4 @@
-package com.spark.common.tools.enums;
+package com.spark.admin.enums;
 
 import lombok.Getter;
 

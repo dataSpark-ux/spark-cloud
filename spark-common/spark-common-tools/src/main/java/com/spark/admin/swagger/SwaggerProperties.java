@@ -1,4 +1,4 @@
-package com.spark.common.tools.swagger;
+package com.spark.admin.swagger;
 
 import lombok.Data;
 import lombok.Getter;
