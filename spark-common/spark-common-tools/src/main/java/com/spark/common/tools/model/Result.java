@@ -16,9 +16,7 @@ import java.io.Serializable;
 
 /**
  * 返回结果
- *
- * @author KevinLea
- * @date 2020-11-26
+ * @author wangyi
  */
 @Data
 @NoArgsConstructor
