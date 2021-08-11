@@ -1,5 +1,3 @@
-server:
-  port: 9900
 spring:
   application:
     name: spark-gateway

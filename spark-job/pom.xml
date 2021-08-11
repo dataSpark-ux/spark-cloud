@@ -10,6 +10,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>spark-job</artifactId>
+    <packaging>pom</packaging>
 
+    <modules>
+        <module>spark-job-executor</module>
+        <module>spark-job-admin</module>
+    </modules>
 
 </project>
