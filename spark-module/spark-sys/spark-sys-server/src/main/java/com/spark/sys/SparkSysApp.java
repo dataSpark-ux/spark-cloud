@@ -1,9 +1,9 @@
-package com.spark.auth;
+package com.spark.sys;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
 
 /**
@@ -12,9 +12,8 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableDiscoveryClient
 @SpringBootApplication
 @ComponentScan(value = "com.spark.*")
-@EnableFeignClients(basePackages = "com.spark.sys.client")
-public class SparkAuthApp {
+public class SparkSysApp {
     public static void main(String[] args) {
-        SpringApplication.run(SparkAuthApp.class, args);
+        SpringApplication.run(SparkSysApp.class, args);
     }
 }

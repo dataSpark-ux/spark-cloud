@@ -1,4 +1,4 @@
-package com.spark.admin.swagger;
+package com.spark.tools.swagger;
 
 import com.github.xiaoymin.knife4j.spring.annotations.EnableKnife4j;
 import com.google.common.base.Predicate;

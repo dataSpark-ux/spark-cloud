@@ -1,6 +1,6 @@
-package com.spark.admin.model;
+package com.spark.tools.model;
 
-import com.spark.admin.enums.ResultEnum;
+import com.spark.tools.enums.ResultEnum;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,11 +12,6 @@ import java.io.Serializable;
  * @author wy
  * @Description 统一返回对象
  * @createTime 2021/08/09
- */
-
-/**
- * 返回结果
- * @author wangyi
  */
 @Data
 @NoArgsConstructor
@@ -41,6 +36,11 @@ public class Result<T> implements Serializable {
     @ApiModelProperty(value = "消息内容")
     private String msg;
 
+    public Result(Integer code, String msg) {
+        this.code = code;
+        this.msg = msg;
+    }
+
     public static <T> Result<T> success(String msg) {
         return of(null, ResultEnum.SUCCESS.getCode(), msg);
     }
@@ -62,14 +62,19 @@ public class Result<T> implements Serializable {
         return new Result<>(data, code, msg);
     }
 
+
+    public static <T> Result<T> of(Integer code, String msg) {
+        return new Result<>(code, msg);
+    }
+
     public static <T> Result<T> failed(String msg) {
 
         return of(null, ResultEnum.ERROR.getCode(), msg);
     }
 
-    public static <T> Result<T> failed(T data, String msg) {
+    public static <T> Result<T> failed(Integer errCode, String msg) {
 
-        return of(data, ResultEnum.ERROR.getCode(), msg);
+        return of(errCode, msg);
     }
 }
 
